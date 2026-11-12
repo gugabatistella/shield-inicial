@@ -23,7 +23,10 @@ formulario.addEventListener("submit", function (event) {
     }
 });
 
-function tratarDados(dados) {
+function capitalizar(texto) {
+    const palavras = texto.trim().toLowerCase().split(" ");
+
+function tratar(dados) {
     return {
         codinome: capitalizar(dados.codinome),
         nome: capitalizar(dados.nome),

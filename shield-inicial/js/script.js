@@ -25,6 +25,18 @@ formulario.addEventListener("submit", function (event) {
 
 function capitalizar(texto) {
     const palavras = texto.trim().toLowerCase().split(" ");
+    const resultado = [];
+
+    for (const palavra of palavras) {
+        if (palavra !== "") {
+
+            resultado.push(palavra[0].toUpperCase() + palavra.slice(1));
+        }
+
+    return resultado.join(" ");
+}
+
+function paraNumero(valor) {
 
 function tratar(dados) {
     return {
